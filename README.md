@@ -8,7 +8,7 @@ The experiments focus on three practical questions:
 - How do the models behave as source sentences become longer?
 - How much do beam search and length penalties change the comparison?
 
-The project description and the final experimental conclusions are in `COURSE_PROJECT_GOAL.md` and `analysis/report_notes/final_findings.md`. A compact English report is available in `output/pdf/project_report.pdf`, with its editable source in `output/pdf/project_report.md`.
+The project description and the final experimental conclusions are in `COURSE_PROJECT_GOAL.md` and `analysis/report_notes/final_findings.md`. 
 
 ## Setup
 
@@ -70,7 +70,7 @@ Export attention examples from an attention model:
 python scripts/export_attention.py --config configs/lstm_attention.json --checkpoint checkpoints/lstm_attention/best.pt --split test --num-examples 12 --min-source-length 10
 ```
 
-Processed data, checkpoints, and raw training logs are local-only and are ignored by git. The checked-in `artifacts/` and `analysis/` directories contain the compact result files used for the report.
+Processed data, checkpoints, and raw training logs are local-only and are ignored by git. The checked-in `artifacts/` and `analysis/` directories contain the compact result files used for comparing the models.
 
 ## Repository layout
 
@@ -79,4 +79,4 @@ Processed data, checkpoints, and raw training logs are local-only and are ignore
 - `configs/`: the four experiment configurations.
 - `artifacts/`: selected translations and machine-readable result summaries.
 - `analysis/`: metric tables, figures, length buckets, decoding comparisons, and error cases.
-- `output/pdf/`: the report source, figures, and generated PDF.
+
