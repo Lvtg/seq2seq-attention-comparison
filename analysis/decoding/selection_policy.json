@@ -1,0 +1,14 @@
+{
+  "valid_selection": "Select highest valid BLEU; if BLEU differs by at most 0.1, select higher chrF.",
+  "bleu_tie_tolerance": 0.1,
+  "beam_sizes": [
+    3,
+    5
+  ],
+  "length_penalties": [
+    0.0,
+    0.6,
+    1.0
+  ],
+  "limit_examples": null
+}

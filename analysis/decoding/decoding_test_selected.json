@@ -1,0 +1,41 @@
+[
+  {
+    "model_id": "lstm_attention",
+    "label": "LSTM attention",
+    "split": "test",
+    "decode_label": "beam5_lp1p0",
+    "method": "beam",
+    "beam_size": 5,
+    "length_penalty": 1.0,
+    "bleu": 28.596180949452656,
+    "chrf": 50.9425661418625,
+    "examples": 1000,
+    "translation_output": "analysis\\decoding\\translations\\test\\lstm_attention_test_beam5_lp1p0.txt"
+  },
+  {
+    "model_id": "gated_attention",
+    "label": "Gated attention",
+    "split": "test",
+    "decode_label": "beam5_lp1p0",
+    "method": "beam",
+    "beam_size": 5,
+    "length_penalty": 1.0,
+    "bleu": 28.04403796592976,
+    "chrf": 51.368765020259545,
+    "examples": 1000,
+    "translation_output": "analysis\\decoding\\translations\\test\\gated_attention_test_beam5_lp1p0.txt"
+  },
+  {
+    "model_id": "transformer_small",
+    "label": "Small Transformer",
+    "split": "test",
+    "decode_label": "beam3_lp1p0",
+    "method": "beam",
+    "beam_size": 3,
+    "length_penalty": 1.0,
+    "bleu": 26.845074885114556,
+    "chrf": 52.9121277803892,
+    "examples": 1000,
+    "translation_output": "analysis\\decoding\\translations\\test\\transformer_small_test_beam3_lp1p0.txt"
+  }
+]

@@ -1,0 +1,22 @@
+model_id,label,split,decode_label,method,beam_size,length_penalty,bleu,chrf,examples,translation_output
+lstm_attention,LSTM attention,valid,greedy,greedy,,,26.779676568793597,49.286625751713494,1014,analysis\decoding\translations\valid\lstm_attention_valid_greedy.txt
+lstm_attention,LSTM attention,valid,beam3_lp0p0,beam,3,0.0,27.920976772139944,49.931111388621034,1014,analysis\decoding\translations\valid\lstm_attention_valid_beam3_lp0p0.txt
+lstm_attention,LSTM attention,valid,beam3_lp0p6,beam,3,0.6,28.07440368156961,50.165938143952246,1014,analysis\decoding\translations\valid\lstm_attention_valid_beam3_lp0p6.txt
+lstm_attention,LSTM attention,valid,beam3_lp1p0,beam,3,1.0,28.219886839808115,50.34247156003303,1014,analysis\decoding\translations\valid\lstm_attention_valid_beam3_lp1p0.txt
+lstm_attention,LSTM attention,valid,beam5_lp0p0,beam,5,0.0,28.187170737131186,49.997212395502935,1014,analysis\decoding\translations\valid\lstm_attention_valid_beam5_lp0p0.txt
+lstm_attention,LSTM attention,valid,beam5_lp0p6,beam,5,0.6,28.56799979152354,50.519182007819786,1014,analysis\decoding\translations\valid\lstm_attention_valid_beam5_lp0p6.txt
+lstm_attention,LSTM attention,valid,beam5_lp1p0,beam,5,1.0,28.834461689876054,50.832128511437546,1014,analysis\decoding\translations\valid\lstm_attention_valid_beam5_lp1p0.txt
+gated_attention,Gated attention,valid,greedy,greedy,,,27.467418877633747,49.53802852093019,1014,analysis\decoding\translations\valid\gated_attention_valid_greedy.txt
+gated_attention,Gated attention,valid,beam3_lp0p0,beam,3,0.0,28.908171433525254,50.60264449444261,1014,analysis\decoding\translations\valid\gated_attention_valid_beam3_lp0p0.txt
+gated_attention,Gated attention,valid,beam3_lp0p6,beam,3,0.6,28.992534566561194,50.79476676398612,1014,analysis\decoding\translations\valid\gated_attention_valid_beam3_lp0p6.txt
+gated_attention,Gated attention,valid,beam3_lp1p0,beam,3,1.0,29.11057437505672,50.98977328521549,1014,analysis\decoding\translations\valid\gated_attention_valid_beam3_lp1p0.txt
+gated_attention,Gated attention,valid,beam5_lp0p0,beam,5,0.0,28.935371096069343,50.47648756459865,1014,analysis\decoding\translations\valid\gated_attention_valid_beam5_lp0p0.txt
+gated_attention,Gated attention,valid,beam5_lp0p6,beam,5,0.6,29.163901152974926,50.78343653986948,1014,analysis\decoding\translations\valid\gated_attention_valid_beam5_lp0p6.txt
+gated_attention,Gated attention,valid,beam5_lp1p0,beam,5,1.0,29.59477499236177,51.2655493973148,1014,analysis\decoding\translations\valid\gated_attention_valid_beam5_lp1p0.txt
+transformer_small,Small Transformer,valid,greedy,greedy,,,26.054141036518935,51.46619424457104,1014,analysis\decoding\translations\valid\transformer_small_valid_greedy.txt
+transformer_small,Small Transformer,valid,beam3_lp0p0,beam,3,0.0,26.803172829280967,51.59593592793228,1014,analysis\decoding\translations\valid\transformer_small_valid_beam3_lp0p0.txt
+transformer_small,Small Transformer,valid,beam3_lp0p6,beam,3,0.6,27.05523071251407,51.910752036647445,1014,analysis\decoding\translations\valid\transformer_small_valid_beam3_lp0p6.txt
+transformer_small,Small Transformer,valid,beam3_lp1p0,beam,3,1.0,27.305077861266195,52.22322145265269,1014,analysis\decoding\translations\valid\transformer_small_valid_beam3_lp1p0.txt
+transformer_small,Small Transformer,valid,beam5_lp0p0,beam,5,0.0,26.765391371419227,51.44585140692097,1014,analysis\decoding\translations\valid\transformer_small_valid_beam5_lp0p0.txt
+transformer_small,Small Transformer,valid,beam5_lp0p6,beam,5,0.6,26.928824811216927,51.703531202777974,1014,analysis\decoding\translations\valid\transformer_small_valid_beam5_lp0p6.txt
+transformer_small,Small Transformer,valid,beam5_lp1p0,beam,5,1.0,27.203470963684367,52.26727268731276,1014,analysis\decoding\translations\valid\transformer_small_valid_beam5_lp1p0.txt

@@ -1,0 +1,41 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local data, checkpoints, and experiment outputs.
+data/raw/
+data/processed/
+checkpoints/
+runs/
+
+# Existing generated scratch outputs.
+tmp/
+output/
+
+# Local reference material and unrelated course notes.
+example_report.pdf
+latex-preview-test.html
+latex-preview-test.md
+exam_answers_en.md
+review_groups_1_to_9.md
+solutions_detailed_zh.md
+solutions_detailed_zh.html
+SOLVING_REQUIREMENTS.md
+trial_exam_bilingual_answers.md
+test/*.pdf
+research_project_report_zh.md
+
+# Local editor and Codex metadata.
+.agents/
+.codex/
+.idea/
+.vscode/
+
+# OS files.
+Thumbs.db
+.DS_Store

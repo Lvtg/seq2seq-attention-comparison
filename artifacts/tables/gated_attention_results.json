@@ -1,0 +1,91 @@
+{
+  "milestone": "gated-attention",
+  "model": "gated_attention",
+  "variant": "length-aware gated attention",
+  "config": "configs/gated_attention.json",
+  "dataset": "Multi30k English-German",
+  "checkpoint": "checkpoints/gated_attention/best.pt",
+  "tracked_checkpoint": false,
+  "method": {
+    "base_model": "LSTM encoder-decoder with Luong-style attention",
+    "gate_inputs": [
+      "decoder_output",
+      "attention_context",
+      "normalized_source_length"
+    ],
+    "length_feature_norm": 80.0,
+    "interpretation": "The scalar gate controls how strongly the fused decoder state uses the attention context at each decoding step."
+  },
+  "training": {
+    "device": "cuda",
+    "parameters": 9567434,
+    "max_epochs": 20,
+    "early_stopped": true,
+    "final_epoch": 19,
+    "best_epoch": 14,
+    "best_valid_loss": 1.9568738340445324,
+    "final_train_loss": 0.7772488395629709,
+    "final_valid_loss": 2.0352844478894125,
+    "total_training_seconds": 954.5310312006623
+  },
+  "test": {
+    "split": "test",
+    "decoding": "greedy",
+    "bleu": 25.965621591958236,
+    "chrf": 49.601161908773385,
+    "translation_output": "artifacts/translations/gated_attention_test_greedy.txt",
+    "gate_examples": "artifacts/gates/gated_attention_test_gate_examples.json",
+    "note": "Evaluation uses the shared tokenized project preprocessing; this is fair for within-project model comparison."
+  },
+  "gate_export": {
+    "examples": 12,
+    "min_source_length_requested": 10,
+    "gate_values": 181,
+    "gate_mean": 0.6999745915607852,
+    "gate_min": 0.5994956493377686,
+    "gate_max": 0.7760640978813171,
+    "per_example_gate_mean_min": 0.6831034421920776,
+    "per_example_gate_mean_max": 0.7208638404096875,
+    "source_length_min": 10,
+    "source_length_max": 29
+  },
+  "comparison_to_lstm_no_attention": {
+    "baseline_bleu": 20.46884762591954,
+    "baseline_chrf": 43.88261832459875,
+    "baseline_best_valid_loss": 2.1719555077088617,
+    "bleu_delta": 5.496773966038695,
+    "chrf_delta": 5.718543584174633,
+    "best_valid_loss_delta": -0.2150816736643293
+  },
+  "comparison_to_lstm_attention": {
+    "baseline_bleu": 27.309644894819208,
+    "baseline_chrf": 49.54956633988433,
+    "baseline_best_valid_loss": 1.9562223262533678,
+    "baseline_parameters": 9124298,
+    "bleu_delta": -1.3440233028609718,
+    "chrf_delta": 0.0515955688890557,
+    "best_valid_loss_delta": 0.0006515077911646294,
+    "parameter_delta": 443136
+  },
+  "epoch_metrics": [
+    {"epoch": 1, "train_loss": 3.9093835368424794, "valid_loss": 3.0814486213616563, "elapsed_seconds": 47.38165799994022},
+    {"epoch": 2, "train_loss": 2.9015724558503897, "valid_loss": 2.619453691583819, "elapsed_seconds": 46.96506180008873},
+    {"epoch": 3, "train_loss": 2.456787248975984, "valid_loss": 2.3738225935539314, "elapsed_seconds": 48.2174658998847},
+    {"epoch": 4, "train_loss": 2.144653754093278, "valid_loss": 2.213473763600915, "elapsed_seconds": 48.06045569991693},
+    {"epoch": 5, "train_loss": 1.904662528900016, "valid_loss": 2.1115567448877655, "elapsed_seconds": 48.19968289975077},
+    {"epoch": 6, "train_loss": 1.708617927040269, "valid_loss": 2.049446091601279, "elapsed_seconds": 46.81313960021362},
+    {"epoch": 7, "train_loss": 1.5507732698035195, "valid_loss": 2.00948060339531, "elapsed_seconds": 46.54172210022807},
+    {"epoch": 8, "train_loss": 1.4202431902863488, "valid_loss": 1.9870489879203053, "elapsed_seconds": 47.02451629983261},
+    {"epoch": 9, "train_loss": 1.3107335714222272, "valid_loss": 1.9671480384505955, "elapsed_seconds": 47.06600310001522},
+    {"epoch": 10, "train_loss": 1.2214227695721842, "valid_loss": 1.9717992569914962, "elapsed_seconds": 47.769006399903446},
+    {"epoch": 11, "train_loss": 1.1435048815466706, "valid_loss": 1.962685783580341, "elapsed_seconds": 47.245093300007284},
+    {"epoch": 12, "train_loss": 1.074179743775327, "valid_loss": 1.966678768470224, "elapsed_seconds": 54.00944330031052},
+    {"epoch": 13, "train_loss": 1.0184508608517189, "valid_loss": 1.9656085397922887, "elapsed_seconds": 53.00613720016554},
+    {"epoch": 14, "train_loss": 0.965036203684241, "valid_loss": 1.9568738340445324, "elapsed_seconds": 53.35617969976738},
+    {"epoch": 15, "train_loss": 0.92070759543258, "valid_loss": 1.979321555829681, "elapsed_seconds": 54.07832830026746},
+    {"epoch": 16, "train_loss": 0.8793490810384937, "valid_loss": 1.9863250975397835, "elapsed_seconds": 55.55566429998726},
+    {"epoch": 17, "train_loss": 0.8431568840549862, "valid_loss": 2.007371213685095, "elapsed_seconds": 54.373282600194216},
+    {"epoch": 18, "train_loss": 0.808407274811366, "valid_loss": 2.019319467350445, "elapsed_seconds": 54.610955299809575},
+    {"epoch": 19, "train_loss": 0.7772488395629709, "valid_loss": 2.0352844478894125, "elapsed_seconds": 54.257235400378704}
+  ]
+}

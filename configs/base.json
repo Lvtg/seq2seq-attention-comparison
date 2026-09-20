@@ -1,0 +1,46 @@
+{
+  "project": {
+    "seed": 13,
+    "device": "auto"
+  },
+  "data": {
+    "root": "data",
+    "dataset": "multi30k",
+    "src_lang": "en",
+    "tgt_lang": "de",
+    "lowercase": true,
+    "min_freq": 2,
+    "max_vocab_size": 12000,
+    "max_source_length": 80,
+    "max_target_length": 80
+  },
+  "model": {
+    "type": "lstm",
+    "attention": "none",
+    "embedding_dim": 256,
+    "hidden_dim": 384,
+    "num_layers": 1,
+    "dropout": 0.3
+  },
+  "training": {
+    "experiment_name": "base",
+    "batch_size": 32,
+    "max_epochs": 20,
+    "learning_rate": 0.001,
+    "clip_grad_norm": 1.0,
+    "teacher_forcing_ratio": 1.0,
+    "early_stopping_patience": 5,
+    "num_workers": 0
+  },
+  "decoding": {
+    "max_length": 80,
+    "method": "greedy",
+    "beam_size": 5,
+    "length_penalty": 0.6
+  },
+  "paths": {
+    "checkpoints_dir": "checkpoints",
+    "runs_dir": "runs",
+    "artifacts_dir": "artifacts"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "extends": "configs/base.json",
+  "model": {
+    "type": "lstm",
+    "attention": "gated_luong",
+    "length_feature_norm": 80.0
+  },
+  "training": {
+    "experiment_name": "gated_attention"
+  }
+}

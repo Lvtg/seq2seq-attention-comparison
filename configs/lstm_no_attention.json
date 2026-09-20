@@ -1,0 +1,10 @@
+{
+  "extends": "configs/base.json",
+  "model": {
+    "type": "lstm",
+    "attention": "none"
+  },
+  "training": {
+    "experiment_name": "lstm_no_attention"
+  }
+}

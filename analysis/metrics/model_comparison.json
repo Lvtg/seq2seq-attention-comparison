@@ -1,0 +1,54 @@
+[
+  {
+    "model_id": "lstm_no_attention",
+    "label": "LSTM no attention",
+    "parameters": 8534474,
+    "best_epoch": 9,
+    "best_valid_loss": 2.1719555077088617,
+    "final_epoch": 14,
+    "final_train_loss": 0.9891154744914079,
+    "final_valid_loss": 2.226636076530524,
+    "total_training_seconds": 355.664033398964,
+    "greedy_bleu": 20.46884762591954,
+    "greedy_chrf": 43.88261832459875
+  },
+  {
+    "model_id": "lstm_attention",
+    "label": "LSTM attention",
+    "parameters": 9124298,
+    "best_epoch": 13,
+    "best_valid_loss": 1.9562223262533678,
+    "final_epoch": 18,
+    "final_train_loss": 0.8531262354486269,
+    "final_valid_loss": 2.016518550408625,
+    "total_training_seconds": 645.799936001655,
+    "greedy_bleu": 27.309644894819208,
+    "greedy_chrf": 49.54956633988433
+  },
+  {
+    "model_id": "gated_attention",
+    "label": "Gated attention",
+    "parameters": 9567434,
+    "best_epoch": 14,
+    "best_valid_loss": 1.9568738340445324,
+    "final_epoch": 19,
+    "final_train_loss": 0.7772488395629709,
+    "final_valid_loss": 2.0352844478894125,
+    "total_training_seconds": 954.5310312006623,
+    "greedy_bleu": 25.965621591958236,
+    "greedy_chrf": 49.601161908773385
+  },
+  {
+    "model_id": "transformer_small",
+    "label": "Small Transformer",
+    "parameters": 9508042,
+    "best_epoch": 11,
+    "best_valid_loss": 1.8265231856202657,
+    "final_epoch": 16,
+    "final_train_loss": 1.0849272192503971,
+    "final_valid_loss": 1.859501098666571,
+    "total_training_seconds": 170.1601721998304,
+    "greedy_bleu": 25.939559187170754,
+    "greedy_chrf": 52.015681134763156
+  }
+]

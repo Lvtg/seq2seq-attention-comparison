@@ -1,0 +1,57 @@
+{
+  "milestone": "lstm-attention",
+  "model": "lstm_attention",
+  "config": "configs/lstm_attention.json",
+  "dataset": "Multi30k English-German",
+  "checkpoint": "checkpoints/lstm_attention/best.pt",
+  "tracked_checkpoint": false,
+  "training": {
+    "device": "cuda",
+    "parameters": 9124298,
+    "max_epochs": 20,
+    "early_stopped": true,
+    "final_epoch": 18,
+    "best_epoch": 13,
+    "best_valid_loss": 1.9562223262533678,
+    "final_train_loss": 0.8531262354486269,
+    "final_valid_loss": 2.016518550408625,
+    "total_training_seconds": 645.799936001655
+  },
+  "test": {
+    "split": "test",
+    "decoding": "greedy",
+    "bleu": 27.309644894819208,
+    "chrf": 49.54956633988433,
+    "translation_output": "artifacts/translations/lstm_attention_test_greedy.txt",
+    "attention_examples": "artifacts/attention/lstm_attention_test_attention_examples.json",
+    "note": "Evaluation uses the shared tokenized project preprocessing; this is fair for within-project model comparison."
+  },
+  "comparison_to_lstm_no_attention": {
+    "baseline_bleu": 20.46884762591954,
+    "baseline_chrf": 43.88261832459875,
+    "baseline_best_valid_loss": 2.1719555077088617,
+    "bleu_delta": 6.840797268899668,
+    "chrf_delta": 5.66694801528558,
+    "best_valid_loss_delta": -0.2157331814554939
+  },
+  "epoch_metrics": [
+    {"epoch": 1, "train_loss": 3.914003763204264, "valid_loss": 3.0915560256147807, "elapsed_seconds": 34.30679630022496},
+    {"epoch": 2, "train_loss": 2.922454363738801, "valid_loss": 2.6494910931882605, "elapsed_seconds": 35.33042619982734},
+    {"epoch": 3, "train_loss": 2.4941404606763475, "valid_loss": 2.39792649895322, "elapsed_seconds": 35.832464000210166},
+    {"epoch": 4, "train_loss": 2.1862253475014546, "valid_loss": 2.2377392527065445, "elapsed_seconds": 36.66027230024338},
+    {"epoch": 5, "train_loss": 1.9478119094121982, "valid_loss": 2.135140122506471, "elapsed_seconds": 36.677564499899745},
+    {"epoch": 6, "train_loss": 1.7545042839302771, "valid_loss": 2.0752223344904133, "elapsed_seconds": 35.57063030032441},
+    {"epoch": 7, "train_loss": 1.5972420354105452, "valid_loss": 2.025646990843579, "elapsed_seconds": 39.02218980016187},
+    {"epoch": 8, "train_loss": 1.4682473057262975, "valid_loss": 1.9981402358080433, "elapsed_seconds": 36.73031590040773},
+    {"epoch": 9, "train_loss": 1.3567615226185752, "valid_loss": 1.9760266927280257, "elapsed_seconds": 35.515388700179756},
+    {"epoch": 10, "train_loss": 1.2667110721063992, "valid_loss": 1.9682614582956364, "elapsed_seconds": 35.28277559997514},
+    {"epoch": 11, "train_loss": 1.1871614664629417, "valid_loss": 1.9643254060407656, "elapsed_seconds": 35.50503089977428},
+    {"epoch": 12, "train_loss": 1.1234246821545324, "valid_loss": 1.9623361859870168, "elapsed_seconds": 35.55836779996753},
+    {"epoch": 13, "train_loss": 1.0635414866974233, "valid_loss": 1.9562223262533678, "elapsed_seconds": 35.465128200128675},
+    {"epoch": 14, "train_loss": 1.0109436769719882, "valid_loss": 1.9774522677987023, "elapsed_seconds": 35.2695026001893},
+    {"epoch": 15, "train_loss": 0.9665081118583162, "valid_loss": 1.981219492735061, "elapsed_seconds": 35.921524399891496},
+    {"epoch": 16, "train_loss": 0.923014814283364, "valid_loss": 2.0042089391894047, "elapsed_seconds": 35.38106510043144},
+    {"epoch": 17, "train_loss": 0.8893299180452044, "valid_loss": 1.9913666146286821, "elapsed_seconds": 35.732959699817},
+    {"epoch": 18, "train_loss": 0.8531262354486269, "valid_loss": 2.016518550408625, "elapsed_seconds": 36.037533700000495}
+  ]
+}

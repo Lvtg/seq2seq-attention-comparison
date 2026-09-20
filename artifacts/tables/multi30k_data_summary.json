@@ -1,0 +1,19 @@
+{
+  "prepared_at": "2026-08-20",
+  "command": "python scripts/prepare_multi30k.py --config configs/base.json",
+  "processed_dir": "data/processed/multi30k",
+  "source_language": "en",
+  "target_language": "de",
+  "source_vocab_size": 5898,
+  "target_vocab_size": 7882,
+  "splits": {
+    "train": 29000,
+    "valid": 1014,
+    "test": 1000
+  },
+  "kept_after_length_filter": {
+    "train": 29000,
+    "valid": 1014,
+    "test": 1000
+  }
+}

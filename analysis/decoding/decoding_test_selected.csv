@@ -1,0 +1,4 @@
+model_id,label,split,decode_label,method,beam_size,length_penalty,bleu,chrf,examples,translation_output
+lstm_attention,LSTM attention,test,beam5_lp1p0,beam,5,1.0,28.596180949452656,50.9425661418625,1000,analysis\decoding\translations\test\lstm_attention_test_beam5_lp1p0.txt
+gated_attention,Gated attention,test,beam5_lp1p0,beam,5,1.0,28.04403796592976,51.368765020259545,1000,analysis\decoding\translations\test\gated_attention_test_beam5_lp1p0.txt
+transformer_small,Small Transformer,test,beam3_lp1p0,beam,3,1.0,26.845074885114556,52.9121277803892,1000,analysis\decoding\translations\test\transformer_small_test_beam3_lp1p0.txt

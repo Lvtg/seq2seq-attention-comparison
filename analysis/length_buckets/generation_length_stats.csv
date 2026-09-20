@@ -1,0 +1,8 @@
+result_set,model_id,label,decode_label,bleu,chrf,examples,avg_source_length,avg_reference_length,avg_hypothesis_length,hyp_ref_length_ratio,shorter_than_ref_ratio,longer_than_ref_ratio,equal_length_ratio,avg_abs_length_delta
+greedy,lstm_no_attention,LSTM no attention,greedy,20.46884762591954,43.88261832459875,1000,13.08,12.249,11.899,0.971426238876643,0.439,0.351,0.21,1.968
+greedy,lstm_attention,LSTM attention,greedy,27.309644894819208,49.54956633988433,1000,13.08,12.249,11.706,0.9556698506000489,0.487,0.279,0.234,1.797
+greedy,gated_attention,Gated attention,greedy,25.965621591958236,49.601161908773385,1000,13.08,12.249,11.875,0.9694668952567557,0.456,0.326,0.218,1.868
+greedy,transformer_small,Small Transformer,greedy,25.939559187170754,52.015681134763156,1000,13.08,12.249,11.933,0.9742019756714834,0.454,0.33,0.216,2.202
+selected,lstm_attention,LSTM attention,beam5_lp1p0,28.596180949452656,50.9425661418625,1000,13.08,12.249,11.542,0.9422810025308188,0.479,0.255,0.266,1.709
+selected,gated_attention,Gated attention,beam5_lp1p0,28.04403796592976,51.368765020259545,1000,13.08,12.249,11.612,0.9479957547554902,0.492,0.269,0.239,1.765
+selected,transformer_small,Small Transformer,beam3_lp1p0,26.845074885114556,52.9121277803892,1000,13.08,12.249,11.439,0.9338721528288023,0.512,0.269,0.219,2.12

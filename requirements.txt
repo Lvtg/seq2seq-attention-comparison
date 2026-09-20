@@ -1,0 +1,4 @@
+numpy>=1.26
+tqdm>=4.66
+sacrebleu>=2.4
+matplotlib>=3.8

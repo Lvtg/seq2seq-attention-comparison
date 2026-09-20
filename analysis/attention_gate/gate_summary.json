@@ -1,0 +1,10 @@
+{
+  "examples": 12,
+  "gate_values": 181,
+  "gate_mean": 0.6999745915607852,
+  "gate_min": 0.5994956493377686,
+  "gate_max": 0.7760640978813171,
+  "per_example_gate_mean_min": 0.6831034421920776,
+  "per_example_gate_mean_max": 0.7208638404096875,
+  "pearson_gate_mean_source_length": -0.09037292784985472
+}
