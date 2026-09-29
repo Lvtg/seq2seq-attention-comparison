@@ -8,7 +8,6 @@ The experiments focus on three practical questions:
 - How do the models behave as source sentences become longer?
 - How much do beam search and length penalties change the comparison?
 
-The project description and the final experimental conclusions are in `COURSE_PROJECT_GOAL.md` and `analysis/report_notes/final_findings.md`. 
 
 ## Setup
 
