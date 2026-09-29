@@ -12,7 +12,6 @@ The original milestone artifacts remain under `artifacts/`. This directory colle
 - `attention_gate/`: attention heatmaps, gate curves, and gate statistics.
 - `error_analysis/`: selected qualitative examples and error taxonomy.
 - `figures/`: report-ready figures generated from analysis tables.
-- `report_notes/`: final observations, table index, and draft report claims.
 
 ## Data Policy
 
