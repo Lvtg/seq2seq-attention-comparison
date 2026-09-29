@@ -69,7 +69,7 @@ Export attention examples from an attention model:
 python scripts/export_attention.py --config configs/lstm_attention.json --checkpoint checkpoints/lstm_attention/best.pt --split test --num-examples 12 --min-source-length 10
 ```
 
-Processed data, checkpoints, and raw training logs are local-only and are ignored by git. The checked-in `artifacts/` and `analysis/` directories contain the compact result files used for comparing the models.
+The checked-in `artifacts/` and `analysis/` directories contain the compact result files used for comparing the models.
 
 ## Repository layout
 
