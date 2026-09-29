@@ -43,12 +43,12 @@ python scripts/inspect_config.py --config configs/lstm_attention.json
 After dependencies and data are ready, run a short training check:
 
 ```powershell
-python scripts/train.py --config configs/lstm_attention.json --max-epochs 1 --limit-train-batches 5 --limit-valid-batches 2
+python scripts/train.py --config configs/lstm_attention.json
 ```
 
 ## Experiments
 
-Train the planned models:
+Train the four models:
 
 ```powershell
 python scripts/train.py --config configs/lstm_no_attention.json
